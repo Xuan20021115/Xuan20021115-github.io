@@ -3,33 +3,47 @@
 <meta charset="utf-8">
 <title>肖申克的救赎</title>
 <style>
-  h1{
-    text-align:center;
-    color: rgb(3, 0, 0);
+  * {
+    box-sizing: border-box;
   }
-ul {
-    list-style-type: none;
+  
+  body {
     margin: 0;
-    padding: 0;
+  }
+  
+  /* 头部样式 */
+  .header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* 导航条 */
+  .topnav {
     overflow: hidden;
     background-color: #333;
-}
- 
-li {
+  }
+  
+  /* 导航链接 */
+  .topnav a {
     float: left;
-}
- 
-li a {
     display: block;
-    color: white;
+    color: #f2f2f2;
     text-align: center;
-    padding: 20px 50px;
+    padding: 14px 16px;
     text-decoration: none;
-}
- 
-/*鼠标移动到选项上修改背景颜色 */
-li a:hover {
-    background-color: rgb(17, 17, 17);
+  }
+  
+  /* 链接 - 修改颜色 */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
 }
 
 
@@ -38,23 +52,24 @@ li a:hover {
 </head>
 
 <body>
-  <div class="container">
+  <div class="header">
+    <h1>肖申克的救赎</h1>
+   </div>
 
-    <div class="header">
-      <h1>肖申克的救赎</h1>
-    </div>
-  
-    <ul>
-      <li><a href="index.html">首页</a></li>
-      <li><a href="影片信息.html">影片信息</a></li>
-      <li><a href="剧情简介.html">剧情简介</a></li>
-      <li><a href="人物简介.html">人物简介</a></li>
-      <li><a href="创作背景.html">创作背景</a></li>
-      <li><a href="热门影评.html">热门影评</a></li>
-      <li> <a href="影片意义.html">影片意义</a></li>
-      <li><a href="粉丝注册.html">粉丝注册</a></li>
-      <li><a href="快速登录.html">快速登录</a></li>
-    </ul>
+   <div class="topnav">
+    <a href="index.html">首页</a>
+    <a href="影片信息.html">影片信息</a>
+    <a href="剧情简介.html">剧情简介</a>
+    <a href="人物简介.html">人物简介</a>
+    <a href="创作背景.html">创作背景</a>
+    <a href="热门影评.html">热门影评</a>
+    <a href="影片意义.html">影片意义</a>
+    <a href="粉丝注册.html">粉丝注册</a>
+    <a href="快速登录.html">快速登录</a>
+
+
+   </div>
+<br>
 
 <img src="img/b64543a98226cffc1e177c2548505d90f603738dbc50.jpg" width="15%" height="auto" alt="">
 <p>《肖申克的救赎》是由弗兰克·德拉邦特编剧并执导的美国剧情片，由蒂姆·罗宾斯、摩根·弗里曼领衔主演。
@@ -133,7 +148,12 @@ li a:hover {
   </table>
 
 
-      
+  <div class="footer">
+
+    <p>肖申克的救赎</p>
+    
+    
+    </div>    
     </body>
 
 
