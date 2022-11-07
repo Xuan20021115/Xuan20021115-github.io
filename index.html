@@ -4,7 +4,15 @@
 <meta charset="utf-8">
 <!-- <meta  name="viewport" content="width=device-width" content="IE=edge" /> -->
 <title>肖申克的救赎</title>
-<link rel="stylesheet" href="normalize.css">
+
+<link rel="stylesheet" href="轮播图/css/reset.css">
+<link rel="stylesheet" type="text/css" href="轮播图/css/normalize.css" />
+
+<link rel="stylesheet" href="轮播图/css/style.css">
+
+
+
+<!-- <link rel="stylesheet" href="normalize.css"> -->
 <style>
   @font-face {
     font-family:Alimama ;
@@ -171,7 +179,35 @@ p{
   </div>
 <br>
 <main class="main">
+  <h3>精彩剧照</h3>
+  <div id="slider">
+    <ul class="slides">
+      <li><img class="responsive" src="img/p2701746307.webp"></li>
+      <li><img class="responsive" src="img/p1241805876.webp"></li>
+      <li><img class="responsive" src="img/p2701746303.webp"></li>  
+      <li><img class="responsive" src="img/p2701745850.webp"></li> 
+      <li><img class="responsive" src="img/p2701746309.webp"></li> 
+    </ul>
+   
+    <ul class="controls">
+      <li><img src="轮播图/img/prev.png" alt="previous"></li>
+      <li><img src="轮播图/img/next.png" alt="next"></li>
+    </ul>
+   
+    <ul class="pagination">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>     
+
+
+
+
   <h3>经典片段</h3>
+  <br><br>
 <video poster="img/p490578846.webp" controls src="video/1_肖申克的救赎2_“活着的意义，要靠自己去找寻”—《肖申克的救赎》.flv" width="1300px" height="auto"></video>
    
 
@@ -216,6 +252,28 @@ p{
 
 </div>
 </main>
+
+
+
+<script src="轮播图/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+	<script src="轮播图/dist/easySlider.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#slider").easySlider( {
+				slideSpeed: 500,
+				paginationSpacing: "15px",
+				paginationDiameter: "12px",
+				paginationPositionFromBottom: "20px",
+				slidesClass: ".slides",
+				controlsClass: ".controls",
+				paginationClass: ".pagination"					
+			});
+		});
+	</script>
+
+
+
 </body>
 
 
