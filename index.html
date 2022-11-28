@@ -44,30 +44,59 @@
 }
 
   /* 导航条 */
-  .topnav {
-    font-family: Alimama;
-    overflow: hidden;
-    font-size: 17px;
-    background-color: #333;
-    
-  }
-  
-  /* 导航链接 */
-  .topnav a{
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+  .nav{
+  font-family: Alimama;
+   height: 40px;
+   background-color: #333;
+   box-shadow: 0px 1px 2px #666;
 
-  
-  /* 链接 - 修改颜色 */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
+
+}
+
+
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+
+
+}
+
+
+.libt{
+    float: left;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height:40px;
+
+
+}
+
+.libt a{
+   color:#f2f2f2;
+   display: block;
+   font-size: 17px;
+   
+}
+.libt a:hover{
+  background: #ccc;
+}
+
+.droplist{
+  background: #333;
+  box-shadow: 0px 1px 2px #666;
+  display: none;
+}
+.droplist li{
+  border-top: 1px solid #ccc;
+}
+
+
+.libt:hover .droplist{
+  display: block;
+}
 
  video{
   display: block;
@@ -163,21 +192,29 @@ p{
     </div>
     <h1 style="font-family: Alimama;">肖申克的救赎</h1>
    <br>
-
-   <div class="topnav">
-    <a href="index.html">&emsp;首页&emsp;</a>
-    <a href="影片信息.html">影片信息</a>
-    <a href="剧情简介.html">剧情简介</a>
-    <a href="人物简介.html">人物简介</a>
-    <a href="热门影评.html">热门影评</a>
-    <a href="粉丝注册.html">粉丝注册</a>
-    <a href="快速登录.html">快速登录</a>
-
-
-   </div>
+   
+   <div class="nav">
+    <ul class="ullist">
+      <li class="libt"><a href="index.html">&emsp;首页&emsp;</a></li>
+      <li class="libt"><a href="影片信息.html">影片信息</a></li>
+      <li class="libt"><a href="剧情简介.html">剧情简介</a></li>
+      <li class="libt"><a href="人物简介.html">人物简介</a></li>
+      <li class="libt">
+        <a href="长影评.html">热门影评</a>
+        <ul class="droplist">
+          <li><a href="长影评.html" style="color: #f2f2f2;">长影评</a></li>
+          <li><a href="短影评.html">短影评</a></li>
+        </ul>
+      </li>
+      <li class="libt"><a href="粉丝注册.html">粉丝注册</a></li>
+      <li class="libt"><a href="快速登录.html">快速登录</a></li>
+    </ul>
+    
+    
+    </div>
 
   </div>
-<br>
+<br><br>
 <main class="main">
   <h3>精彩剧照</h3>
   <div id="slider">
@@ -208,12 +245,12 @@ p{
 
   <h3>经典片段</h3>
   <br><br>
-<video poster="img/p490578846.webp" controls src="video/1_肖申克的救赎2_“活着的意义，要靠自己去找寻”—《肖申克的救赎》.flv" width="1300px" height="auto"></video>
+<video poster="img/p490578846.webp" controls src="video/1_肖申克的救赎2_“活着的意义，要靠自己去找寻”—《肖申克的救赎》.flv" width="1600px" height="auto"></video>
    
 
    <div class="row">
     <div class="column">
-     <img class="img" src="img/b64543a98226cffc1e177c2548505d90f603738dbc50.jpg" width="30%" height="auto" alt="">
+     <img class="img" src="img/b64543a98226cffc1e177c2548505d90f603738dbc50.jpg" width="30%" height="auto" alt=""><br>
       <h3><a class="link" href="影片信息.html">影片信息</a></h3>
       <p>&emsp;&emsp;该片根据斯蒂芬·埃德温·金1982年的中篇小说《肖申克的救赎》改编，主要讲述了银行家安迪因被误判为枪杀妻子及其情人的罪名入狱后，他不动声色、步步为营地谋划自我拯救并最终成功越狱，重获自由的故事。
        该片于1994年9月10日在多伦多国际电影节首映，并于同年9月23日在美国部分地区公映。1995年，该片获得第67届奥斯卡金像奖中包括最佳影片在内的七项提名。</p>
@@ -222,7 +259,7 @@ p{
     </div>
     <div class="column">
       <img class="img" src="img/src=http___img.touzitop.com_article_details_202201_e3bb0d2731a80d934df84bc2e653700f.jpg&refer=http___img.touzitop.webp" width="65%" height="auto" alt="">
-      <h3><a class="link" href="剧情简介.html">剧情简介</a></h3>
+     <br> <h3><a class="link" href="剧情简介.html">剧情简介</a></h3>
       <p>&emsp;&emsp;银行家安迪·杜佛兰（蒂姆·罗宾斯饰）被指控枪杀了妻子及其情人，安迪被判无期徒刑，这意味着他将在肖申克监狱中渡过余生。
         埃利斯·“瑞德”·雷丁（摩根·弗里曼饰）1927年因谋杀罪被判无期徒刑，数次假释都未获成功。他成为了肖申克监狱中的“权威人物”，只要你付得起钱，他几乎有办法搞到任何你想要的东西：香烟、糖果、酒，甚至是大麻。每当有新囚犯来的时候，大家就赌谁会在第一个夜晚哭泣。瑞德认为弱不禁风、书生气十足的安迪一定会哭，结果安迪的沉默使瑞德输掉了两包烟，但同时也使他对安迪刮目相看。很长时间以来，安迪不和任何人接触，在大家抱怨的同时，他在院子里很悠闲地散步，就像在公园里一样。一个月后，安迪请瑞德帮他搞的第一件东西是一把小的鹤嘴锄，他的解释是他想雕刻一些小东西以消磨时光，并说他会自己想办法逃过狱方的例行检查。不久，瑞德就玩上了安迪雕刻的国际象棋。之后，安迪又搞了一幅影星丽塔·海华丝的巨幅海报贴在了牢房的墙上……</p>
 
@@ -230,8 +267,8 @@ p{
 
     </div>
   <div class="column">
-    <img class="img" src="img/472309f790529822720e39af279b6ccb0a46f21f7e07.jpg" width="32%" height="auto" alt="">
-    <h3><a class="link" href="创作背景.html">创作背景</a></h3>
+    <img class="img" src="img/472309f790529822720e39af279b6ccb0a46f21f7e07.jpg" width="32%" height="auto" alt=""><br>
+    <h3>创作背景</h3>
     <p>&emsp;&emsp;《肖申克的救赎》的原版小说作者斯蒂芬·埃德温·金曾通过一美元宝贝计划（Dollar Baby）帮助新导演树立名声。1983年，该片的导演弗兰克·德拉邦特用1美元从斯蒂芬手中买下了短片小说《房间里的女人》的电影改编版权并拍成短片，这也是两人的首次合作。
       1987年，德拉邦特凭借电影《猛鬼街3》首次列名为电影编剧，然后他联系斯蒂芬，并用5000美元买下了其小说《肖申克的救赎》的电影改编版权，该中篇小说全长96页，是斯蒂芬1982年出版的小说合集《四季奇谭》的一部分，也是斯蒂芬在其赖以成名的恐怖题材小说之余尝试的其他体裁。小说中的大部分内容讲的是瑞德长期照顾狱友安迪，斯蒂芬当时觉得这样的题材很难改编成电影，但德拉邦特却认为不难…… </p>
   </div>

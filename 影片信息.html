@@ -3,6 +3,7 @@
 
 <meta charset="utf-8">
 <title>肖申克的救赎</title>
+
 <link rel="stylesheet" href="normalize.css">
 <style>
 
@@ -38,30 +39,59 @@
 }
 
   /* 导航条 */
-  .topnav {
-    font-family: Alimama;
-    overflow: hidden;
-    font-size: 17px;
-    background-color: #333;
-    
-  }
-  
-  /* 导航链接 */
-  .topnav a{
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+  .nav{
+  font-family: Alimama;
+   height: 40px;
+   background-color: #333;
+   box-shadow: 0px 1px 2px #666;
 
-  
-  /* 链接 - 修改颜色 */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
+
+}
+
+
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+
+
+}
+
+
+.libt{
+    float: left;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+
+
+}
+
+.libt a{
+   color:#f2f2f2;
+   display: block;
+   font-size: 17px;
+   
+}
+.libt a:hover{
+  background: #ccc;
+}
+
+.droplist{
+  background: #333;
+  box-shadow: 0px 1px 2px #666;
+  display: none;
+}
+.droplist li{
+  border-top: 1px solid #ccc;
+}
+
+
+.libt:hover .droplist{
+  display: block;
+}
   
 
 .box1{
@@ -118,22 +148,30 @@ img{
     <h1 style="font-family: Alimama;">肖申克的救赎</h1>
    <br>
 
-   <div class="topnav">
-    <a href="index.html">&emsp;首页&emsp;</a>
-    <a href="影片信息.html">影片信息</a>
-    <a href="剧情简介.html">剧情简介</a>
-    <a href="人物简介.html">人物简介</a>
-    <a href="热门影评.html">热门影评</a>
-    <a href="粉丝注册.html">粉丝注册</a>
-    <a href="快速登录.html">快速登录</a>
-
-
-   </div>
+   <div class="nav">
+    <ul class="ullist">
+      <li class="libt"><a href="index.html">&emsp;首页&emsp;</a></li>
+      <li class="libt"><a href="影片信息.html">影片信息</a></li>
+      <li class="libt"><a href="剧情简介.html">剧情简介</a></li>
+      <li class="libt"><a href="人物简介.html">人物简介</a></li>
+      <li class="libt">
+        <a href="长影评.html">热门影评</a>
+        <ul class="droplist">
+          <li><a href="长影评.html" style="color: #f2f2f2;">长影评</a></li>
+          <li><a href="短影评.html">短影评</a></li>
+        </ul>
+      </li>
+      <li class="libt"><a href="粉丝注册.html">粉丝注册</a></li>
+      <li class="libt"><a href="快速登录.html">快速登录</a></li>
+    </ul>
+    
+    
+    </div>
 
   </div>
-<br>
+<br><br><br>
 <main class="main">
-  <h3>影片信息</h3>
+  <h3>影片信息</h3><br><br>
   <div class="box1">
 <img src="img/b64543a98226cffc1e177c2548505d90f603738dbc50.jpg" width="341px" height="auto" alt=""></div>
 <div class="box2">《肖申克的救赎》是由弗兰克·德拉邦特编剧并执导的美国剧情片，由蒂姆·罗宾斯、摩根·弗里曼领衔主演。
