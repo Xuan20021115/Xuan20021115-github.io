@@ -1,95 +1,52 @@
-<html>
-<head>
-<meta charset="utf-8">
-<title>肖申克的救赎</title>
-<style>
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  /* 头部样式 */
-  .header {
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* 导航条 */
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* 导航链接 */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* 链接 - 修改颜色 */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
+// 登录界面
+//设置cookie
+function setCookies(obj, limitTime) {
+    let data = new Date(new Date().getTime() + limitTime * 24 * 60 * 60 * 1000).toUTCString()
+    for (let i in obj) {
+        document.cookie = i + '=' + obj[i] + ';expires=' + data
+    }
 
-  .footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
 }
+$("#login").click(function () {
+    var userName = "root";
+    var passWd = "333";
+    var inputName = $("#userName").val();
+    var inputWd = $("#passWd").val();
 
-</style>
+    if (inputName == userName && inputWd == passWd) {
 
-</head>
-
-<body>
-  <div class="header">
-    <h1>肖申克的救赎</h1>
-   </div>
-
-   <div class="topnav">
-    <a href="index.html">首页</a>
-    <a href="影片信息.html">影片信息</a>
-    <a href="剧情简介.html">剧情简介</a>
-    <a href="人物简介.html">人物简介</a>
-    <a href="创作背景.html">创作背景</a>
-    <a href="热门影评.html">热门影评</a>
-    <a href="影片意义.html">影片意义</a>
-    <a href="粉丝注册.html">粉丝注册</a>
-    <a href="快速登录.html">快速登录</a>
-
-
-   </div>
-<br>
-    <h2>账号注册</h2>
-    <form action="">
-    输入账号：<input type="text" name="zhanghao"><br>
-    输入密码：<input type="text" name="Mima"><br>
-    重复密码：<input type="text" name="Mima2"><br>
-    性别：<input type="radio" name="sex" value="male">男<input type="radio" name="sex" value="male">女<br>
-    <input type="submit" value="提交"><br>
-    
-
-  </form>
-
-  <div class="footer">
-
-    <p>肖申克的救赎</p>
-    
-    
-    </div>
-    </body>
+        setCookies({
+            userName: inputName
+        }, 7);
+        location.reload();
+    }
+    else {
+        $(".error").text("密码错误");
+    }
+});
+$("#logout").click(function () {
+    $.cookie("userName", "", { expires: -1 });
+    location.reload();
+});
+// 登录界面
+})
 
 
-
-
-
-    </html>
+ <!-- 登录界面 -->
+ <div class="panel-lite">
+  <div class="thumbur">
+      <div class="icon-lock"></div>
+  </div>
+  <h4>用户登录</h4>
+  <div class="form-group">
+      <input id="userName" required="required" class="form-control" />
+      <label class="form-label">用户名 (root) </label>
+  </div>
+  <div class="form-group">
+      <input id="passWd" type="password" required="required" class="form-control" />
+      <label class="form-label">密　码 (333)</label>
+  </div><a href="#">忘记密码 ? </a>
+  <button class="floating-btn" id="login"><i class="icon-arrow"></i></button>
+  <div class="error"></div>
+</div>
+<!-- 登录界面 -->

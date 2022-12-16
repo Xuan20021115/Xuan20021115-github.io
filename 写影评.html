@@ -1,0 +1,224 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>肖申克的救赎</title>
+<link rel="stylesheet" href="normalize.css">
+<style>
+
+@font-face {
+    font-family:Alimama ;
+    src: url(./font/Alimama_ShuHeiTi_Bold.ttf);
+  }
+
+  @font-face {
+    font-family:font2;
+    src: url(./font/Alibaba_PuHuiTi_2.0_95_ExtraBold_95_ExtraBold.ttf);
+  }
+
+
+  /* 头部样式 */
+  .header {
+    background-color: white;
+   
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+.png{
+  float: left;
+  padding-top: 10px;
+  width: 70px;
+}
+.png a{
+  font-family: font2;
+  text-decoration: none;
+
+}
+
+  /* 导航条 */
+  .nav{
+  font-family: Alimama;
+   height: 40px;
+   background-color: #333;
+   box-shadow: 0px 1px 2px #666;
+
+
+}
+
+
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+
+
+}
+
+
+.libt{
+    float: left;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+
+
+}
+
+.libt a{
+   color:#f2f2f2;
+   display: block;
+   font-size: 17px;
+   
+}
+.libt a:hover{
+  background: #ccc;
+}
+
+.droplist{
+  background: #333;
+  box-shadow: 0px 1px 2px #666;
+  display: none;
+}
+.droplist li{
+  border-top: 1px solid #ccc;
+}
+
+
+.libt:hover .droplist{
+  display: block;
+}
+
+
+.box1{
+  float: left;
+  width: 400px;
+  
+}
+.box2{
+  font-family: font2;
+}
+table{
+
+  font-family: font2;
+}
+
+main{
+
+
+  height: auto;
+  margin: 0 auto;
+}
+
+.topbox{
+  background-color: rgb(244, 244, 244);
+  height: 80px;
+}
+
+.li1 a{
+  float: left;
+  padding-left: 40px;
+  line-height: 80px;
+  text-decoration: none;
+  color: #333;
+}
+
+.li2 a{
+  float: right;
+  line-height: 80px;
+  padding-right: 5px;
+  text-decoration: none;
+  color: #333;
+}
+.li2 img{
+   float: right;
+  padding-top: 28px;
+  padding-right: 10px;
+}
+
+h3{
+  font-family: Alimama;
+  text-align: center;
+  text-decoration: none;
+}
+.link{
+  text-decoration: none;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+  .footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+  </style>
+
+
+</head>
+
+<body>
+   <div class="header"><br>
+    <div class="png"><img src="img/电影，视频.png" height="50px" width="auto" alt="">
+      <a href="https://www.bilibili.com/bangumi/play/ss28274?t=131&spm_id_from=333.1007.top_right_bar_window_history.content.click" target="_blank" >电影链接</a>
+      </div>
+    <h1 style="font-family: Alimama;">肖申克的救赎</h1>
+   <br>
+   <div class="nav">
+    <ul class="ullist">
+      <li class="libt"><a href="index.html">&emsp;首页&emsp;</a></li>
+      <li class="libt"><a href="影片信息.html">影片信息</a></li>
+      <li class="libt"><a href="剧情简介.html">剧情简介</a></li>
+      <li class="libt"><a href="人物简介.html">人物简介</a></li>
+      <li class="libt">
+        <a href="长影评.html">热门影评</a>
+        <ul class="droplist">
+          <li><a href="长影评.html" style="color: #f2f2f2;">长影评</a></li>
+          <li><a href="短影评.html">短影评</a></li>
+        </ul>
+      </li>
+      <li class="libt"><a href="登录注册.html">登录注册</a></li>
+    </ul>
+    
+    
+    </div>
+   
+   </div>
+
+ 
+<br><br><br>
+
+<main class="main">
+  <h3>影评编写</h3>
+<form action="">
+ 标题：<input type="text"> <br>
+ 评分(满分10分）：<input type="text"><br>
+ 观看体验：<input type="radio" name="观看体验" value="震撼人心">震撼人心 &emsp;
+ <input type="radio" name="观看体验" value="差强人意">差强人意 &emsp;
+ <input type="radio" name="观看体验" value="普通平庸">普通平庸 &emsp;
+ <input type="radio" name="观看体验" value="无聊至极">无聊至极 &emsp;
+ <br>
+
+正文：<textarea name="正文" id="" cols="30" rows="10"></textarea>
+<br>
+
+<input type="checkbox" name="" value="">本文涉及剧透 <br>
+<input type="checkbox" name="" value="">我声明此文章为原创<br>
+<input type="submit" value="确认提交">
+
+</form>
+
+
+
+
+</main>
+
+
+
