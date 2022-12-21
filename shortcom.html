@@ -1,0 +1,282 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name=”viewport” content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>热门影评</title>
+
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/shortcom.css">
+<script src="js/shortcom.js"></script>
+<script src="js/greet.js"></script>
+
+
+
+</head>
+
+<body>
+  <div class="header" id="header"></div>
+  <script>
+    $.get("./tpl/header.tpl", function(result){      
+          $("#header").html(result);
+    });
+    </script>
+
+<br>
+<h3 class="log1" id="log1" style="text-align: right">欢迎你，游客</h3>
+
+
+<main class="main">
+<h3>热门影评</h3>
+<div class="topbox">
+  <ul class="li1">
+    <li><a href="longcom.html">长影评</a></li>
+    <li><a href="shortcom.html">短影评</a></li>
+  </ul>
+<ul class="li2">
+  <li><img height="20px" src="img/评论.png" alt=""></li>
+  <li><button id="div_add">写影评</button></li>
+</ul>
+<form id="adduse" name="add">
+  <p class="addusep">新增评论</p>
+  
+    标题：<input type="text" name="title" id="title" value="测试"> <br>
+    <div class="error" id="err1">请输入标题</div>
+    
+    评分(满分10分）：<input type="number" name="rank" id="rank" max="10" value="10"><br>
+    <div class="error" id="err2">请输入且输入10以内的数</div>
+    
+    观看体验：<input type="radio" name="feel" value="震撼人心" checked>震撼人心 &emsp;
+    <input type="radio" name="feel" value="差强人意">差强人意 &emsp;
+    <input type="radio" name="feel" value="普通平庸">普通平庸 &emsp;
+    <input type="radio" name="feel" value="无聊至极">无聊至极 &emsp;<br>
+    
+    
+   
+   正文：<textarea name="content" id="content" value="测试11111" cols="30" rows="10" ></textarea><br>
+   <div class="error" id="err4" >请输入正文</div>
+   
+   
+   <input type="checkbox" name="check" value="">本文涉及剧透 
+   <br>
+   <input type="checkbox" name="check" value="">我声明此文章为原创
+   <br>
+   <button type="button" value="" id="save">确认提交</button>
+  
+   <button id="cancle">取消</button>
+  
+   
+  
+
+</form>
+
+</div>
+
+<br>
+<div class="short-comment" id="comment">
+<div class="comment">
+  <div class="user">
+    <div class="usermes"><p>用户：秃笔子</p></div>
+    
+    <div class="date"><p>2015-10-11 11:07:53</p></div>
+    <span class="grade">评分 10</span>
+    <span class="feel">震撼人心</span>
+    
+    
+    </div>
+
+  <div class="commentcontent">
+  <p class="content">
+    <span>一等人改变环境，二等人适应环境，三等人抱怨一生。</span>
+   
+  </p>
+<br>
+  
+  <button class="del" id="DEL" onclick="del(this)">删除评论</button>
+  
+  </div>
+  
+  
+  
+  </div>
+
+  <div class="comment">
+    <div class="user">
+      <div class="usermes"><p>用户：BAIGANG</p></div>
+      
+      <div class="date"><p>2017-3-17 16:33:08</p></div>
+      <span class="grade">评分 6</span>
+      <span class="feel">差强人意</span>
+      
+      
+      </div>
+  
+    <div class="commentcontent">
+    <p class="content">
+      <span>我一定要打破这个观念，此片在我眼里与《监狱风云》没什么区别。</span>
+     
+    </p>
+  <br>
+    <button class="del" id="DEL" onclick="del(this)">删除评论</button>
+    
+    </div>
+    
+    
+    
+    </div>
+
+    <div class="comment">
+      <div class="user">
+        <div class="usermes"><p>用户：瞎弄弄</p></div>
+        
+        <div class="date"><p>2016-9-24 12:16:00</p></div>
+        <span class="grade">评分 8</span>
+        <span class="feel">震撼人心</span>
+        
+        
+        </div>
+    
+      <div class="commentcontent">
+      <p class="content">
+        <span>影迷入门电影，长期占领各大榜单前三位，不管是谁推荐的片子里也一定有它；超高的出镜率让我对这部电影从有感变成了无感。。。</span>
+       
+      </p>
+    <br>
+      <button class="del" id="DEL" onclick="del(this)">删除评论</button>
+      
+      </div>
+      
+      
+      
+      </div>
+
+      <div class="comment">
+        <div class="user">
+          <div class="usermes"><p>用户：疯狂坏先生</p></div>
+          
+          <div class="date"><p>2015-1-17 16:52:52</p></div>
+          <span class="grade">评分 10</span>
+          <span class="feel">震撼人心</span>
+          
+          
+          </div>
+      
+        <div class="commentcontent">
+        <p class="content">
+          <span>唯一一部打十分的电影，不是因为她真的完美，而是因为她已经是我心中的一个象征。</span>
+         
+        </p>
+      <br>
+        <button class="del" id="DEL" onclick="del(this)">删除评论</button>
+        
+        </div>
+        
+        
+        
+        </div>
+
+        <div class="comment">
+          <div class="user">
+            <div class="usermes"><p>用户：罗利</p></div>
+            
+            <div class="date"><p>2018-3-7 20:11:50</p></div>
+            <span class="grade">评分 10</span>
+            <span class="feel">震撼人心</span>
+            
+            
+            </div>
+        
+          <div class="commentcontent">
+          <p class="content">
+            <span>
+
+              连续几年每年都会看一遍这个电影，每次都有新的感悟。人生充满了希望，不管有多么艰难，都有一颗勇敢的心。乐观的心.
+              
+              </span>
+           
+          </p>
+        <br>
+          <button class="del" id="DEL" onclick="del(this)">删除评论</button>
+          
+          </div>
+          
+          
+          
+          </div>
+
+
+          <div class="comment">
+            <div class="user">
+              <div class="usermes"><p>用户：薄翠</p></div>
+              
+              <div class="date"><p>2017-4-12 17:18:01</p></div>
+              <span class="grade">评分 10</span>
+              <span class="feel">震撼人心</span>
+              
+              
+              </div>
+          
+            <div class="commentcontent">
+            <p class="content">
+              <span>
+
+                不管重看多少遍，每回听到《费加罗的婚礼》那悠扬的乐声都莫名感动，就像瑞德说的“美得让人心碎”！我的最爱，没有之一，将“自由”诠释得如此全面、深刻。
+                
+                </span>
+             
+            </p>
+          <br>
+            <button class="del" id="DEL" onclick="del(this)">删除评论</button>
+            
+            </div>
+            
+            
+            
+            </div>
+
+
+            <div class="comment">
+              <div class="user">
+                <div class="usermes"><p>用户：我不是娜娜</p></div>
+                
+                <div class="date"><p>2017-3-2 19:16:37</p></div>
+                <span class="grade">评分 10</span>
+                <span class="feel">震撼人心</span>
+                
+                
+                </div>
+            
+              <div class="commentcontent">
+             
+                <span>
+
+                  这部片子后从此迷恋上了看电影,光影世界，一旦沉迷,永生无法自拔
+                  
+                  </span>
+               
+             
+            <br>
+              <button class="del" id="DEL" onclick="del(this)">删除评论</button>
+              
+              </div>
+              
+              
+              
+              </div>
+  
+
+            </div>
+<br><br>
+            <div class="footer">
+
+              <p>肖申克的救赎</p>
+              
+              
+              </div>
+</main>
+
+
+

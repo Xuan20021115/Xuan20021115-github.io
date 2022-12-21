@@ -1,0 +1,233 @@
+
+
+@font-face {
+    font-family:Alimama ;
+    src: url(./font/Alimama_ShuHeiTi_Bold.ttf);
+  }
+
+  @font-face {
+    font-family:font2;
+    src: url(./font/Alibaba_PuHuiTi_2.0_95_ExtraBold_95_ExtraBold.ttf);
+  }
+
+
+  /* 头部样式 */
+  .header {
+    background-color: white;
+    
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+.png{
+  float: left;
+  padding-top: 10px;
+  width: 70px;
+}
+.png a{
+  font-family: font2;
+  text-decoration: none;
+
+}
+
+  /* 导航条 */
+  .nav{
+  font-family: Alimama;
+   height: 40px;
+   background-color: #333;
+   box-shadow: 0px 1px 2px #666;
+
+
+}
+
+
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+
+
+}
+
+
+.libt{
+    float: left;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+
+
+}
+
+.libt a{
+   color:#f2f2f2;
+   display: block;
+   font-size: 17px;
+   
+}
+.libt a:hover{
+  background: #ccc;
+}
+
+.droplist{
+  background: #333;
+  box-shadow: 0px 1px 2px #666;
+  display: none;
+}
+.droplist li{
+  border-top: 1px solid #ccc;
+}
+
+
+.libt:hover .droplist{
+  display: block;
+}
+
+
+.box1{
+  float: left;
+  width: 400px;
+  
+}
+.box2{
+  font-family: font2;
+}
+table{
+
+  font-family: font2;
+}
+
+main{
+
+
+  height: auto;
+  margin: 0 auto;
+}
+
+.topbox{
+  background-color: rgb(244, 244, 244);
+  height: 80px;
+}
+
+.li1 a{
+  float: left;
+  padding-left: 40px;
+  line-height: 80px;
+  text-decoration: none;
+  color: #333;
+}
+
+.li2 a{
+  float: right;
+  line-height: 80px;
+  padding-right: 5px;
+  text-decoration: none;
+  color: #333;
+}
+.li2 img{
+   float: right;
+  padding-top: 28px;
+  padding-right: 10px;
+}
+
+.comment{
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: #ccc 1px solid;
+
+}
+
+.rank{
+   background-color: #ff9600;
+   width: 76px;
+   height: 84px;
+   font-size: 18px;
+   padding: 6px 8px 0 0;
+   text-align: right;
+   margin-right: 20px;
+   line-height: 1.2em;
+
+}
+
+.rank span{
+  color: #f1f1f1;
+}
+
+.rank h3{
+  font-size: 50px;
+  display: block;
+  margin-block-start: 0.4em;
+    margin-inline-start: 45px;
+    margin-inline-end: 0px;
+    color: #f1f1f1;
+}
+
+.commentcontent{
+
+  display: block;
+  padding-right: 25px;
+  padding-left: 25px;
+    
+  width: 1200px;
+  border-right: 1px solid #ccc;
+
+
+}
+
+
+.title{
+  font-size: 25px;
+  
+}
+
+.title a{
+  color: #333;
+}
+
+.content{
+  color: #999;
+}
+
+.content a{
+  color: #08c;
+}
+
+.usermes img{
+  padding-left: 10px;
+  width: 68px;
+}
+.usermes p{
+  padding-left: 10px;
+  text-align: center;
+  color:#999 ;
+}
+
+.userid,.date,.grade{
+  padding-left: 20px;
+  color: #999;
+}
+
+h3{
+  font-family: Alimama;
+  text-align: center;
+  text-decoration: none;
+}
+.link{
+  text-decoration: none;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+  .footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  font-family: font2;
+}

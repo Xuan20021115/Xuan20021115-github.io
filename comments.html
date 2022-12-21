@@ -1,0 +1,47 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name=”viewport” content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>肖申克的救赎</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/top1.css">
+<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="js/greet.js"></script>
+<script src="js/comments.js"></script>
+
+
+
+</head>
+
+<body>
+  <div class="header" id="header"></div>
+  <script>
+    $.get("./tpl/header.tpl", function(result){      
+          $("#header").html(result);
+    });
+    </script>
+
+
+   <br>
+   <h3 class="log1" id="log1" style="text-align: right">欢迎你，游客</h3>
+   <br>
+
+<main class="main">
+  <div class="title"></div><br><br>
+  
+  <div class="content"></div><br><br>
+  <div class="date"></div>
+
+  <br><br>
+<div class="footer">
+
+  <p>肖申克的救赎</p>
+  
+  
+  </div>
+
+</main>
+
+
+

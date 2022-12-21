@@ -1,0 +1,223 @@
+
+
+
+@font-face {
+  font-family:Alimama ;
+  src: url(./font/Alimama_ShuHeiTi_Bold.ttf);
+}
+@font-face {
+  font-family:font2;
+  src: url(./font/Alibaba_PuHuiTi_2.0_95_ExtraBold_95_ExtraBold.ttf);
+}
+
+/* 头部样式 */
+h1{
+  text-align: center;
+}
+
+.header {
+  background-color: white;
+  /* width: 1600px; */
+  height: 150px;
+  margin: 0 auto;
+ 
+}
+
+.png{
+float: left;
+padding-top: 10px;
+width: 70px;
+}
+.png a{
+font-family: font2;
+text-decoration: none;
+
+}
+
+/* 导航条 */
+.nav{
+font-family: Alimama;
+ height: 40px;
+ background-color: #333;
+ box-shadow: 0px 1px 2px #666;
+
+
+}
+
+
+*{
+ margin: 0;
+ padding: 0;
+ text-decoration: none;
+ list-style: none;
+
+
+}
+
+
+.libt{
+  float: left;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height:40px;
+
+
+}
+
+.libt a{
+ color:#f2f2f2;
+ display: block;
+ font-size: 17px;
+ 
+}
+.libt a:hover{
+background: #ccc;
+}
+
+.droplist{
+background: #333;
+box-shadow: 0px 1px 2px #666;
+display: none;
+}
+.droplist li{
+border-top: 1px solid #ccc;
+}
+
+
+.libt:hover .droplist{
+display: block;
+}
+
+/*--------------SLIDER----------------*/
+
+#slider {
+	width: 75%;
+	margin: 50px auto;
+}
+
+
+/*--------------CONTROLS--------------*/
+
+/*position controls*/
+.controls li {
+	top: 50%;
+	margin-top: -30px
+}
+
+.controls li:nth-child(1) {
+	left: 0;
+}
+
+.controls li:nth-child(2) {
+	right: 0;
+}
+
+
+/*------------轮播图------------*/
+
+/*style pagination*/
+.pagination li {
+	background-color: #ddd;
+}
+
+.pagination li.active {
+	background-color: #000;
+}
+
+
+/*-------------HELPERS----------------*/
+
+.responsive {
+	width: 100%;
+	height: auto;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+video{
+display: block;
+padding-bottom: 20px;
+margin: 0 auto;
+}
+
+/* 创建三个相等的列 */
+.column {
+  float: left;
+  width: 32%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+ 
+/* 列后清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ 
+/* 响应式布局 - 小于 600 px 时改为上下布局 */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+
+  }
+}
+
+.column>p::first-letter{
+
+font-size: larger;
+font-weight: bolder;
+}
+
+
+main{
+
+/* width: 1600px; */
+height: auto;
+margin: 0 auto;
+}
+
+
+h3{
+font-family: Alimama;
+text-align: center;
+text-decoration: none;
+}
+p{
+ font-family: font2;
+
+
+}
+.link:link{
+color:burlywood;
+
+}
+
+.link:visited{
+color: blue;
+}
+.link:active{
+color: red;
+}
+
+.link{
+text-decoration: none;
+}
+
+.img{
+display: block;
+margin: 0 auto;
+
+}
+
+.footer {
+background-color: #f1f1f1;
+padding: 10px;
+text-align: center;
+}

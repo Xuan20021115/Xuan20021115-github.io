@@ -2,224 +2,36 @@
 <head>
   
 <meta charset="utf-8">
-<!-- <meta  name="viewport" content="width=device-width" content="IE=edge" /> -->
+<meta name=”viewport” content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <title>肖申克的救赎</title>
 
-<link rel="stylesheet" href="轮播图/css/reset.css">
-<link rel="stylesheet" type="text/css" href="轮播图/css/normalize.css" />
+<link rel="stylesheet" href="css/reset.css">
+<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="js/greet.js"></script>
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 
-<link rel="stylesheet" href="轮播图/css/style.css">
+<link rel="stylesheet" href="css/index.css">
+
 
 
 
 <!-- <link rel="stylesheet" href="normalize.css"> -->
-<style>
-  @font-face {
-    font-family:Alimama ;
-    src: url(./font/Alimama_ShuHeiTi_Bold.ttf);
-  }
-  @font-face {
-    font-family:font2;
-    src: url(./font/Alibaba_PuHuiTi_2.0_95_ExtraBold_95_ExtraBold.ttf);
-  }
-
-  /* 头部样式 */
-  h1{
-    text-align: center;
-  }
-  
-  .header {
-    background-color: white;
-    /* width: 1600px; */
-    height: 150px;
-    margin: 0 auto;
-   
-  }
-  
-.png{
-  float: left;
-  padding-top: 10px;
-  width: 70px;
-}
-.png a{
-  font-family: font2;
-  text-decoration: none;
-
-}
-
-  /* 导航条 */
-  .nav{
-  font-family: Alimama;
-   height: 40px;
-   background-color: #333;
-   box-shadow: 0px 1px 2px #666;
-
-
-}
-
-
-*{
-   margin: 0;
-   padding: 0;
-   text-decoration: none;
-   list-style: none;
-
-
-}
-
-
-.libt{
-    float: left;
-    width: 100px;
-    height: 40px;
-    text-align: center;
-    line-height:40px;
-
-
-}
-
-.libt a{
-   color:#f2f2f2;
-   display: block;
-   font-size: 17px;
-   
-}
-.libt a:hover{
-  background: #ccc;
-}
-
-.droplist{
-  background: #333;
-  box-shadow: 0px 1px 2px #666;
-  display: none;
-}
-.droplist li{
-  border-top: 1px solid #ccc;
-}
-
-
-.libt:hover .droplist{
-  display: block;
-}
-
- video{
-  display: block;
-  padding-bottom: 20px;
-  margin: 0 auto;
- }
-
-  /* 创建三个相等的列 */
-  .column {
-    float: left;
-    width: 32%;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-   
-  /* 列后清除浮动 */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-   
-  /* 响应式布局 - 小于 600 px 时改为上下布局 */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-
-    }
-  }
-
-.column>p::first-letter{
-
-font-size: larger;
-font-weight: bolder;
-}
-
-
-main{
-
-  /* width: 1600px; */
-  height: auto;
-  margin: 0 auto;
-}
-
-
-h3{
-  font-family: Alimama;
-  text-align: center;
-  text-decoration: none;
-}
-p{
-   font-family: font2;
-
-
-}
-.link:link{
-  color:burlywood;
-
-}
-
-.link:visited{
-  color: blue;
-}
-.link:active{
-  color: red;
-}
-
-.link{
-  text-decoration: none;
-}
-
-.img{
-  display: block;
-  margin: 0 auto;
-}
-
-  .footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
-
-  </style>
 
 
 </head>
 
 <body>
-   <div class="header"><br>
-    <div class="png"><img src="img/电影，视频.png" height="50px" width="auto" alt="">
-    <a href="https://www.bilibili.com/bangumi/play/ss28274?t=131&spm_id_from=333.1007.top_right_bar_window_history.content.click" target="_blank">电影链接</a>
-    </div>
-    <h1 style="font-family: Alimama;">肖申克的救赎</h1>
-    <h3 id="log1" style="text-align: right">欢迎你，游客</h3>
-   <br>
-   
-   <div class="nav">
-    <ul class="ullist">
-      <li class="libt"><a href="index.html">&emsp;首页&emsp;</a></li>
-      <li class="libt"><a href="影片信息.html">影片信息</a></li>
-      <li class="libt"><a href="剧情简介.html">剧情简介</a></li>
-      <li class="libt"><a href="人物简介.html">人物简介</a></li>
-      <li class="libt">
-        <a href="长影评.html">热门影评</a>
-        <ul class="droplist">
-          <li><a href="长影评.html" style="color: #f2f2f2;">长影评</a></li>
-          <li><a href="短影评.html">短影评</a></li>
-        </ul>
-      </li>
-      <li class="libt"><a href="登录注册.html">登录注册</a></li>
-    
-    </ul>
-    
-    
-    </div>
+   <div class="header" id="header"></div>
+    <script>
+      $.get("./tpl/header.tpl", function(result){      
+            $("#header").html(result);
+      });
+      </script>
+  
+  <br>
+<h3 class="log1" id="log1" style="text-align: right">欢迎你，游客</h3>
+<br>
 
-  </div>
-<br><br>
 <main class="main">
   <h3>精彩剧照</h3>
   <div id="slider">
@@ -232,8 +44,8 @@ p{
     </ul>
    
     <ul class="controls">
-      <li><img src="轮播图/img/prev.png" alt="previous"></li>
-      <li><img src="轮播图/img/next.png" alt="next"></li>
+      <li><img src="img/prev.png" alt="previous"></li>
+      <li><img src="img/next.png" alt="next"></li>
     </ul>
    
     <ul class="pagination">
@@ -256,7 +68,7 @@ p{
    <div class="row">
     <div class="column">
      <img class="img" src="img/b64543a98226cffc1e177c2548505d90f603738dbc50.jpg" width="30%" height="auto" alt=""><br>
-      <h3><a class="link" href="影片信息.html">影片信息</a></h3>
+      <h3><a class="link" href="moviemessage.html">影片信息</a></h3>
       <p>&emsp;&emsp;该片根据斯蒂芬·埃德温·金1982年的中篇小说《肖申克的救赎》改编，主要讲述了银行家安迪因被误判为枪杀妻子及其情人的罪名入狱后，他不动声色、步步为营地谋划自我拯救并最终成功越狱，重获自由的故事。
        该片于1994年9月10日在多伦多国际电影节首映，并于同年9月23日在美国部分地区公映。1995年，该片获得第67届奥斯卡金像奖中包括最佳影片在内的七项提名。</p>
 
@@ -264,7 +76,7 @@ p{
     </div>
     <div class="column">
       <img class="img" src="img/src=http___img.touzitop.com_article_details_202201_e3bb0d2731a80d934df84bc2e653700f.jpg&refer=http___img.touzitop.webp" width="65%" height="auto" alt="">
-     <br> <h3><a class="link" href="剧情简介.html">剧情简介</a></h3>
+     <br> <h3><a class="link" href="story.html">剧情简介</a></h3>
       <p>&emsp;&emsp;银行家安迪·杜佛兰（蒂姆·罗宾斯饰）被指控枪杀了妻子及其情人，安迪被判无期徒刑，这意味着他将在肖申克监狱中渡过余生。
         埃利斯·“瑞德”·雷丁（摩根·弗里曼饰）1927年因谋杀罪被判无期徒刑，数次假释都未获成功。他成为了肖申克监狱中的“权威人物”，只要你付得起钱，他几乎有办法搞到任何你想要的东西：香烟、糖果、酒，甚至是大麻。每当有新囚犯来的时候，大家就赌谁会在第一个夜晚哭泣。瑞德认为弱不禁风、书生气十足的安迪一定会哭，结果安迪的沉默使瑞德输掉了两包烟，但同时也使他对安迪刮目相看。很长时间以来，安迪不和任何人接触，在大家抱怨的同时，他在院子里很悠闲地散步，就像在公园里一样。一个月后，安迪请瑞德帮他搞的第一件东西是一把小的鹤嘴锄，他的解释是他想雕刻一些小东西以消磨时光，并说他会自己想办法逃过狱方的例行检查。不久，瑞德就玩上了安迪雕刻的国际象棋。之后，安迪又搞了一幅影星丽塔·海华丝的巨幅海报贴在了牢房的墙上……</p>
 
@@ -296,11 +108,10 @@ p{
 </main>
 
 
-
-<script src="轮播图/js/jquery-2.1.1.min.js" type="text/javascript"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
-	<script src="轮播图/dist/easySlider.js"></script>
+	<script src="js/easySlider.js"></script>
 	<script type="text/javascript">
+
 		$(function() {
 			$("#slider").easySlider( {
 				slideSpeed: 500,
@@ -313,7 +124,6 @@ p{
 			});
 		});
 	</script>
-
 
 
 </body>
