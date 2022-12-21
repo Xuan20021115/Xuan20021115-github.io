@@ -1,6 +1,8 @@
 $(function(){
   var userName=getCookie("username");
-  $(".log1").text("欢迎你，"+userName);
+  if(userName!=undefined){
+    $(".log1").text("欢迎你，"+userName);
+    }
 }
 );
 

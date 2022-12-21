@@ -140,6 +140,7 @@ display: block;
 }
 
 video{
+width: 1000px;
 display: block;
 padding-bottom: 20px;
 margin: 0 auto;
